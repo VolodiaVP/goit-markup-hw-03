@@ -326,6 +326,12 @@ a {
   border-radius: 5px;
 }
 
+/* Эффекты наведения и фокуса для текста с эффектом */
+.examples-text:hover,
+.examples-text:focus {
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
 .examples-element:nth-child(3n) {
   margin-right: 0px;
 }
