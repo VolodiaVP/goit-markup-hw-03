@@ -4,6 +4,8 @@
 /* белый #ffffff */
 /* цвет фона подвала #2f303a */
 /* цвета фона преимуществ #f5f4fa */
+/* цвет границы хедера #ECECEC */
+/* цвет границы примеров #EEEEEE */
 
 /* Палитра */
 :root {
@@ -13,6 +15,8 @@
   --white-color: #ffffff;
   --footer-bgc: #2f303a;
   --advantages-bgc: #f5f4fa;
+  --header-border: #ececec;
+  --exampes-border: #eeeeee;
 }
 
 html {
@@ -176,8 +180,10 @@ a {
 
 .flex-footer {
   display: flex;
+  margin-bottom: 18px;
   padding-top: 48px;
-  align-items: flex-start;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-footer {
@@ -230,7 +236,6 @@ a {
 
 /* Разработчики футер */
 .developers {
-  margin-top: 46px;
   margin-bottom: 0px;
   padding-bottom: 21px;
   font-weight: 400;
