@@ -19,18 +19,20 @@
     <!-- Хедер страницы -->
     <header class="header">
       <div class="container pages-nav">
-        <!-- <nav class="pages-nav"> -->
-        <a href="" class="logo-header"><span class="logo-web">Web</span> Studio
-        </a>
-    
-        <ul class="site-nav list">
-          <li class="item"><a href="" class="link current">Студия</a></li>
-          <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио </a>
-          </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
+        <nav class="main-nav">
+          <a href="" class="logo-header"
+            ><span class="logo-web">Web</span> Studio
+          </a>
+
+          <ul class="site-nav list">
+            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио </a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
         </nav>
+
         <ul class="nav-items list">
           <li class="item">
             <img src="./image/envelope.svg" alt="Почта" />
@@ -58,15 +60,15 @@
       </section>
 
       <!-- Наши преимущества -->
-      <section class="section">
+      <section class="section border">
         <div class="container">
-          <h2 class="section-title hidden">Секция наши преимущества</h2>
+          <h2 class="section-title">Секция наши преимущества</h2>
           <ul class="advantages list">
             <li class="item">
               <img
-                src="./image/antenna-1.svg"
-                alt="Изображение антенны"
                 class="advantages-pic"
+                src="./image/advantages/antenna-1.svg"
+                alt="Изображение антенны"
               />
               <h3 class="text advantages-title">Внимание к деталям</h3>
               <p class="advantages-description">
@@ -76,10 +78,9 @@
             </li>
             <li class="item">
               <img
-                src="./image/clock-1.svg"
+                class="advantages-pic"
+                src="./image/advantages/clock-1.svg"
                 alt="Изображение часов"
-                class="advantages-pic"
-                class="advantages-pic"
               />
               <h3 class="text advantages-title">Пунктуальность</h3>
               <p class="advantages-description">
@@ -89,9 +90,9 @@
             </li>
             <li class="item">
               <img
-                src="./image/diagram-1.svg"
-                alt="Изображение диаграммы"
                 class="advantages-pic"
+                src="./image/advantages/diagram-1.svg"
+                alt="Изображение диаграммы"
               />
               <h3 class="text advantages-title">Планирование</h3>
               <p class="advantages-description">
@@ -101,10 +102,9 @@
             </li>
             <li class="item">
               <img
-                src="./image/astronaut-1.svg"
+                class="advantages-pic"
+                src="./image/advantages/astronaut-1.svg"
                 alt="Изображение астронавта"
-                class="advantages-pic"
-                class="advantages-pic"
               />
               <h3 class="text advantages-title">Современные технологии</h3>
               <p class="advantages-description">
@@ -123,31 +123,31 @@
           <ul class="activities list">
             <li class="item">
               <img
-                src="./image/desctop-app.jpg"
-                alt="Изображение ноутбука"
-                width="380"
-                height="294"
                 class="activities-pic"
+                src="./image/activities/desctop-app.jpg"
+                alt="Изображение ноутбука"
+                width="370"
+                height="294"
               />
               <p class="text">Десктопные приложения</p>
             </li>
             <li class="item">
               <img
-                src="./image/mobile-app.jpg"
-                alt="Изображение смартфона"
-                width="380"
-                height="294"
                 class="activities-pic"
+                src="./image/activities/mobile-app.jpg"
+                alt="Изображение смартфона"
+                width="370"
+                height="294"
               />
               <p class="text">Мобильные приложения</p>
             </li>
             <li class="item">
               <img
-                src="./image/design-solutions.jpg"
-                alt="Изображение рабочего стола"
-                width="380"
-                height="294"
                 class="activities-pic"
+                src="./image/activities/design-solutions.jpg"
+                alt="Изображение рабочего стола"
+                width="370"
+                height="294"
               />
               <p class="text">Дизайнерские решения</p>
             </li>
@@ -161,135 +161,151 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
             <!-- Джон Смит -->
-            <li class="item">
+            <li class="team-item">
               <img
-                src="./image/JohnSmith.jpg"
-                alt="Джон Смит"
-                width="278"
-                height="260"
                 class="team-pic"
+                src="./image/team/JohnSmith.jpg"
+                alt="Джон Смит"
+                width="270"
+                height="260"
               />
-              <h3 class="team-title">John Smith</h3>
-              <p class="team-description">Product Designer</p>
-              <ul class="list team-social">
-                <li>
-                  <a href=""
-                    ><img src="./image/instagram.svg" alt="Instagramm"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""><img src="./image/twitter.svg" alt="Twitter" /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/facebook.svg" alt="Facebook"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/linkedin.svg" alt="LinkedIn"
-                  /></a>
-                </li>
-              </ul>
+              <div class="team-info">
+                <h3 class="team-title">John Smith</h3>
+                <p class="team-description">Product Designer</p>
+                <ul class="list team-social">
+                  <li>
+                    <a href=""
+                      ><img src="./image/instagram.svg" alt="Instagramm"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/twitter.svg" alt="Twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/linkedin.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <!-- Марта Стюарт -->
-            <li class="item">
+            <li class="team-item">
               <img
-                src="./image/MartaStewart.jpg"
-                alt="Марта Стюарт"
-                width="278"
-                height="260"
                 class="team-pic"
+                src="./image/team/MartaStewart.jpg"
+                alt="Марта Стюарт"
+                width="270"
+                height="260"
               />
-              <h3 class="team-title">Marta Stewart</h3>
-              <p class="team-description">Frontend Developer</p>
-              <ul class="list team-social">
-                <li>
-                  <a href=""
-                    ><img src="./image/instagram.svg" alt="Instagramm"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""><img src="./image/twitter.svg" alt="Twitter" /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/facebook.svg" alt="Facebook"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/linkedin.svg" alt="LinkedIn"
-                  /></a>
-                </li>
-              </ul>
+              <div class="team-info">
+                <h3 class="team-title">Marta Stewart</h3>
+                <p class="team-description">Frontend Developer</p>
+                <ul class="list team-social">
+                  <li>
+                    <a href=""
+                      ><img src="./image/instagram.svg" alt="Instagramm"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/twitter.svg" alt="Twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/linkedin.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <!-- Роберт Джакис -->
-            <li class="item">
+            <li class="team-item">
               <img
-                src="./image/RobetJakis.jpg"
-                alt="Роберт Джакис"
-                width="278"
-                height="260"
                 class="team-pic"
+                src="./image/team/RobertJakis.jpg"
+                alt="Роберт Джакис"
+                width="270"
+                height="260"
               />
-              <h3 class="team-title">Robert Jakis</h3>
-              <p class="team-description">Marketing</p>
-              <ul class="list team-social">
-                <li>
-                  <a href=""
-                    ><img src="./image/instagram.svg" alt="Instagramm"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""><img src="./image/twitter.svg" alt="Twitter" /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/facebook.svg" alt="Facebook"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/linkedin.svg" alt="LinkedIn"
-                  /></a>
-                </li>
-              </ul>
+              <div class="team-info">
+                <h3 class="team-title">Robert Jakis</h3>
+                <p class="team-description">Marketing</p>
+                <ul class="list team-social">
+                  <li>
+                    <a href=""
+                      ><img src="./image/instagram.svg" alt="Instagramm"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/twitter.svg" alt="Twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/linkedin.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <!-- Мартин Доу -->
-            <li class="item">
+            <li class="team-item">
               <img
-                src="./image/MartinDoe.jpg"
-                alt="Мартин Доу"
-                width="278"
-                height="260"
                 class="team-pic"
+                src="./image/team/MartinDoe.jpg"
+                alt="Мартин Доу"
+                width="270"
+                height="260"
               />
-              <h3 class="team-title">Martin Doe</h3>
-              <p class="team-description">UI Designer</p>
-              <ul class="list team-social">
-                <li>
-                  <a href=""
-                    ><img src="./image/instagram.svg" alt="Instagramm"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""><img src="./image/twitter.svg" alt="Twitter" /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/facebook.svg" alt="Facebook"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./image/linkedin.svg" alt="LinkedIn"
-                  /></a>
-                </li>
-              </ul>
+              <div class="team-info">
+                <h3 class="team-title">Martin Doe</h3>
+                <p class="team-description">UI Designer</p>
+                <ul class="list team-social">
+                  <li>
+                    <a href=""
+                      ><img src="./image/instagram.svg" alt="Instagramm"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/twitter.svg" alt="Twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img src="./image/linkedin.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -300,38 +316,46 @@
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients list">
-            <li class="item">
-              <img src="./image/company1.svg" alt="YA&CO" class="clients-pic" />
-            </li>
-            <li class="item">
+            <li class="clients-item">
               <img
-                src="./image/company2.svg"
+                class="clients-pic"
+                src="./image/clients/company1.svg"
+                alt="YA&CO"
+              />
+            </li>
+            <li class="clients-item">
+              <img
+                class="clients-pic"
+                src="./image/clients/company2.svg"
                 alt="Company Tagline Here"
-                class="clients-pic"
               />
             </li>
-            <li class="item">
+            <li class="clients-item">
               <img
-                src="./image/company3.svg"
+                class="clients-pic"
+                src="./image/clients/company3.svg"
                 alt="Company"
-                class="clients-pic"
               />
             </li>
-            <li class="item">
+            <li class="clients-item">
               <img
-                src="./image/company4.svg"
+                class="clients-pic"
+                src="./image/clients/company4.svg"
                 alt="Foster Peters"
-                class="clients-pic"
               />
             </li>
-            <li class="item">
-              <img src="./image/company5.svg" alt="Brand" class="clients-pic" />
-            </li>
-            <li class="item">
+            <li class="clients-item">
               <img
-                src="./image/company6.svg"
-                alt="Company Tagline"
                 class="clients-pic"
+                src="./image/clients/company5.svg"
+                alt="Brand"
+              />
+            </li>
+            <li class="clients-item">
+              <img
+                class="clients-pic"
+                src="./image/clients/company6.svg"
+                alt="Company Tagline"
               />
             </li>
           </ul>
@@ -380,8 +404,13 @@
           <p class="text appeal">ПОДПИШИСЬ НА РАССЫЛКУ</p>
           <!-- Заметка для ментора - форму добавил просто для практики -->
           <form action="#" method="POST">
-            <input type="email" name="E-mail" placeholder="E-mail" />
-            <input type="submit" value="Подписаться" class="button subscribe" />
+            <input
+              class="email"
+              type="email"
+              name="E-mail"
+              placeholder="E-mail"
+            />
+            <input class="button subscribe" type="submit" value="Подписаться" />
           </form>
         </div>
       </div>

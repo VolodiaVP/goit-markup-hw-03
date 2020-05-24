@@ -19,16 +19,6 @@
   --exampes-border: #eeeeee;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
@@ -72,6 +62,11 @@ a {
 }
 
 .pages-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -130,7 +125,7 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -184,22 +179,19 @@ a {
 
 .flex-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 18px;
   padding-top: 48px;
   padding-bottom: 28px;
-  align-items: flex-start;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-footer {
-  display: flex;
-}
-
-.social-footer > .item:not(:last-child) {
-  margin-right: 11px;
-}
-
 /* Адрес футер */
+.address-container {
+  min-width: 214px;
+}
+
 .address {
   font-style: normal;
   font-weight: 400;
@@ -215,13 +207,23 @@ a {
   color: var(--accent-text-color);
 }
 
+/* Присоединяйся футер */
+.social-container {
+  min-width: 206px;
+  /* margin-left: 179px; */
+}
+
 .appeal {
   margin-top: 0px;
   margin-bottom: 21px;
 }
 
-.social-container {
-  margin-left: 179px;
+.social-footer {
+  display: flex;
+}
+
+.social-footer > .item:not(:last-child) {
+  margin-right: 11px;
 }
 
 .social-footer img {
@@ -235,12 +237,23 @@ a {
   border-radius: 44px;
 }
 
+/* Подпишись на рассылку футер */
 .subscribe-container {
-  margin-left: auto;
+  min-width: 570px;
+}
+
+.email {
+  width: 358px;
+  height: 50px;
+  margin-right: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 
 /* Разработчики футер */
 .developers {
+  margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 21px;
   font-weight: 400;
@@ -266,11 +279,6 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-/* Преимущества */
-.hidden {
-  margin-bottom: 0px;
 }
 
 /* Кнопки фильтров */
@@ -321,16 +329,22 @@ a {
   margin-top: 0px;
   margin-bottom: 30px;
   margin-right: 30px;
-
+  padding-left: 0px;
+  /* 
   border: 1px solid var(--exampes-border);
-  border-radius: 5px;
+  border-radius: 5px; */
 }
+
+/* .examples-element:hover,
+.examples-element:focus {
+  border: 1px solid var(--accent-text-color);
+} */
 
 /* Эффекты наведения и фокуса для текста с эффектом */
-.examples-text:hover,
+/* .examples-text:hover,
 .examples-text:focus {
   background-color: rgba(33, 150, 243, 0.9);
-}
+} */
 
 .examples-element:nth-child(3n) {
   margin-right: 0px;
@@ -342,16 +356,33 @@ a {
 
 .examples-pic {
   display: block;
-  margin-bottom: 20px;
+  max-width: 100%;
+  margin-bottom: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.examples-description {
+  padding: 20px 24px;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--exampes-border);
+  border-bottom-right-radius: 5px;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--exampes-border);
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--exampes-border);
+  border-bottom-left-radius: 5px;
 }
 
 .examples-title {
   margin-top: 0px;
   margin-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -363,9 +394,6 @@ a {
 .examples-filters {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
 
   font-weight: normal;
   font-size: 16px;
